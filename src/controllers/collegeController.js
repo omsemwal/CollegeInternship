@@ -14,6 +14,8 @@ const logoValidator = function (value) {
 }
 
 const createCollege = async function (req, res) {
+    res.setHeader("Access-Control-Allow-Origin","*")
+
     try {
         const requestBody = req.body
         const requestQuery = req.query
@@ -93,6 +95,8 @@ const createCollege = async function (req, res) {
 }
 
 const functionupInterns = async function (req, res) {
+    res.setHeader("Access-Control-Allow-Origin","*")
+
     try {
         let requestQuery = req.query
         let requestBody = req.body
